@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Activity_Menu"
+    android:layoutDirection="ltr">
+
+
+    <ImageView
+        android:id="@+id/panel_IMG_game_menu_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        android:background="@color/cardview_dark_background"/>
+
+
+    <LinearLayout
+        android:id="@+id/panel_layout_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/panel_BTN_start"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:onClick="nextActivity"
+            android:scaleType="fitCenter"
+            tools:ignore="OnClick" />
+
+        <TextView
+            android:id="@+id/panel_LBL_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:text="START GAME"
+            android:fontFamily="@font/harry_potter_font"
+            android:textColor="#E6C067"
+            android:onClick="nextActivity"
+            android:lines="@color/black"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/panel_BTN_setting"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        tools:ignore="OnClick"
+        android:onClick="setImgPlayer"
+        android:src="@drawable/img_btn_feather"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/panel_layout_player"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="300dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/panel_LBL_tap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:text="Tap The Player For Change"
+            android:fontFamily="@font/harry_potter_font"
+            android:textColor="#E6C067"
+            android:lines="@color/black"
+            android:textSize="30sp"
+            android:visibility="invisible"/>
+
+
+
+        <ImageButton
+            android:id="@+id/panel_BTN_player"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:padding="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitCenter"
+            android:background="@null"
+            tools:ignore="OnClick"
+            android:onClick="changeMyPlayer"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/panel_BTN_choose"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        tools:ignore="OnClick"
+        android:onClick="backToMenu"
+        android:visibility="invisible"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Activity_Game_Over"
+    android:layoutDirection="ltr">
+
+
+    <ImageView
+        android:id="@+id/panel_IMG_game_over_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cardview_dark_background"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_game_over_background"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/panel_LBL_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/harry_potter_font"
+        android:text="GAME OVER!"
+        android:textColor="#E6C067"
+        android:textSize="60sp" />
+
+
+    <ImageButton
+        android:id="@+id/panel_BTN_start_over"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        tools:ignore="OnClick"
+        android:onClick="nextActivity"
+        android:src="@drawable/img_btn_start_over"/>
+
+
+        <ImageButton
+            android:id="@+id/panel_BTN_exit"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitCenter"
+            android:background="@null"
+            tools:ignore="OnClick"
+            android:onClick="finish"
+            android:src="@drawable/img_btn_exit"/>
+
+</RelativeLayout>
